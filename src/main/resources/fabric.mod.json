@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "forge_tags",
+  "version": "${version}",
+  "name": "Forge Tags",
+  "description": "",
+  "authors": [
+    "AlphaMode"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/ForgeTags/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.alphamode.forgetags.data.DataGenerators"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.12.11",
+    "fabric": "*",
+    "minecraft": "1.18"
+  }
+}
