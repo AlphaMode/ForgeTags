@@ -41,6 +41,21 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         tag(GLASS_COLORLESS).add(Blocks.GLASS);
         tag(GLASS_PANES_COLORLESS).add(Blocks.GLASS_PANE);
         addColored(tag(STAINED_GLASS_PANES)::add, GLASS_PANES, "{color}_stained_glass_pane");
+        tag(OBSIDIAN).add(Blocks.OBSIDIAN);
+        tag(STORAGE_BLOCKS).addTag(STORAGE_BLOCKS_COAL).addTag(STORAGE_BLOCKS_DIAMOND).addTag(STORAGE_BLOCKS_EMERALD).addTag(STORAGE_BLOCKS_GOLD).addTag(STORAGE_BLOCKS_IRON).addTag(STORAGE_BLOCKS_LAPIS).addTag(STORAGE_BLOCKS_QUARTZ).addTag(STORAGE_BLOCKS_REDSTONE).addTag(STORAGE_BLOCKS_NETHERITE);
+        tag(STORAGE_BLOCKS_COAL).add(Blocks.COAL_BLOCK);
+        tag(STORAGE_BLOCKS_DIAMOND).add(Blocks.DIAMOND_BLOCK);
+        tag(STORAGE_BLOCKS_EMERALD).add(Blocks.EMERALD_BLOCK);
+        tag(STORAGE_BLOCKS_GOLD).add(Blocks.GOLD_BLOCK);
+        tag(STORAGE_BLOCKS_IRON).add(Blocks.IRON_BLOCK);
+        tag(STORAGE_BLOCKS_LAPIS).add(Blocks.LAPIS_BLOCK);
+        tag(STORAGE_BLOCKS_QUARTZ).add(Blocks.QUARTZ_BLOCK);
+        tag(STORAGE_BLOCKS_REDSTONE).add(Blocks.REDSTONE_BLOCK);
+        tag(STORAGE_BLOCKS_NETHERITE).add(Blocks.NETHERITE_BLOCK);
+        tag(CHESTS).addTag(CHESTS_ENDER).addTag(CHESTS_TRAPPED).addTag(CHESTS_WOODEN);
+        tag(CHESTS_ENDER).add(Blocks.ENDER_CHEST);
+        tag(CHESTS_TRAPPED).add(Blocks.TRAPPED_CHEST);
+        tag(CHESTS_WOODEN).add(Blocks.CHEST, Blocks.TRAPPED_CHEST);
     }
 
     private void addColored(Consumer<Block> consumer, Tag.Identified<Block> group, String pattern)
@@ -71,6 +86,8 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
             throw new IllegalStateException(Tags.Blocks.class.getName() + " is missing tag name: " + name);
         }
     }
+
+
 
     public FabricTagBuilder<Block> tag(Tag.Identified<Block> tag) {
         return getOrCreateTagBuilder(tag);

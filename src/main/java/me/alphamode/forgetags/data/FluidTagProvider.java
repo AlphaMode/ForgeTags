@@ -14,8 +14,8 @@ public class FluidTagProvider extends FabricTagProvider.FluidTagProvider {
 
     @Override
     protected void generateTags() {
-        if(Registry.FLUID.get(new Identifier("c:milk")) != null) {
-            getOrCreateTagBuilder(Tags.Fluids.MILK).add(Registry.FLUID.get(new Identifier("c:milk")));
-        }
+//        if(Registry.FLUID.get(new Identifier("c:milk")) != null) {
+//            getOrCreateTagBuilder(Tags.Fluids.MILK).add(Registry.FLUID.get(new Identifier("c:milk")));
+//        }
     }
 }

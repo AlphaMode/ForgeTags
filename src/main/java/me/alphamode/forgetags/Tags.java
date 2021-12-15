@@ -46,6 +46,15 @@ public class Tags {
 		public static final Tag.Identified<Item> COPPER_PLATES = tag("copper_plates");
 		public static final Tag.Identified<Item> OBSIDIAN = tag("obsidian");
 		public static final Tag.Identified<Item> STORAGE_BLOCKS = tag("storage_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_COAL = tag("coal_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_DIAMOND = tag("diamond_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_EMERALD = tag("emerald_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_GOLD = tag("gold_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_IRON = tag("iron_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_LAPIS = tag("lapis_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_NETHERITE = tag("netherite_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_QUARTZ = tag("quartz_blocks");
+		public static final Tag.Identified<Item> STORAGE_BLOCKS_REDSTONE = tag("redstone_blocks");
 		public static final Tag.Identified<Item> ENDER_PEARLS = tag("ender_pearls");
 		public static final Tag.Identified<Item> GLASS = tag("glass");
 		public static final Tag.Identified<Item> GLASS_BLACK = tag("black_glass");
@@ -65,6 +74,12 @@ public class Tags {
 		public static final Tag.Identified<Item> GLASS_RED = tag("red_glass");
 		public static final Tag.Identified<Item> GLASS_WHITE = tag("white_glass");
 		public static final Tag.Identified<Item> GLASS_YELLOW = tag("yellow_glass");
+		public static final Tag.Identified<Item> STRING = tag("string");
+		public static final Tag.Identified<Item> CHESTS = tag("chests");
+		public static final Tag.Identified<Item> CHESTS_ENDER = tag("ender_chests");
+		public static final Tag.Identified<Item> CHESTS_TRAPPED = tag("trapped_chests");
+		public static final Tag.Identified<Item> CHESTS_WOODEN = tag("wooden_chests");
+		public static final Tag.Identified<Item> LEATHER = tag("leather");
 	}
 	public static class Blocks {
 		public static Tag.Identified<Block> tag(String id) {
@@ -121,6 +136,20 @@ public class Tags {
 		public static final Tag.Identified<Block> GLASS_PANES_YELLOW = tag("yellow_glass_panes");
 		public static final Tag.Identified<Block> STAINED_GLASS_PANES = tag("stained_glass_panes");
 		public static final Tag.Identified<Block> STORAGE_BLOCKS = tag("storage_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_COAL = tag("coal_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_DIAMOND = tag("diamond_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_EMERALD = tag("emerald_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_GOLD = tag("gold_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_IRON = tag("iron_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_LAPIS = tag("lapis_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_NETHERITE = tag("netherite_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_QUARTZ = tag("quartz_blocks");
+		public static final Tag.Identified<Block> STORAGE_BLOCKS_REDSTONE = tag("redstone_blocks");
+		public static final Tag.Identified<Block> OBSIDIAN = tag("obsidian");
+		public static final Tag.Identified<Block> CHESTS = tag("chests");
+		public static final Tag.Identified<Block> CHESTS_ENDER = tag("ender_chests");
+		public static final Tag.Identified<Block> CHESTS_TRAPPED = tag("trapped_chests");
+		public static final Tag.Identified<Block> CHESTS_WOODEN = tag("wooden_chests");
 	}
 	public static class Fluids {
 		public static Tag.Identified<Fluid> tag(String id) {
