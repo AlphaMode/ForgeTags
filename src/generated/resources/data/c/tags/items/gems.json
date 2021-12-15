@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:diamonds",
+    "#c:emerald",
+    "#c:lapis_lazulis",
+    "#c:prismarine",
+    "#c:quartz"
+  ]
+}

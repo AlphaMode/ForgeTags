@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraft.tag.Tag;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 
 //TODO: IMPLEMENT ALL THESE TAGS WITH COMMON ONES
@@ -28,12 +29,17 @@ public class Tags {
 		public static final Tag.Identified<Item> ORES_NETHERITE_SCRAP = tag("ancient_debris");
 		public static final Tag.Identified<Item> NUGGETS = tag("nuggets");
 		public static final Tag.Identified<Item> NUGGETS_IRON = tag("iron_nuggets");
-		public static final Tag.Identified<Item> DYES = tag("dyes");
 		public static final Tag.Identified<Item> SLIMEBALLS = tag("slimeballs");
 		public static final Tag.Identified<Item> DUSTS_REDSTONE = tag("redstone_dusts");
 		public static final Tag.Identified<Item> INGOTS_IRON = tag("iron_ingots");
 		public static final Tag.Identified<Item> IRON_PLATES = tag("iron_plates");
 		public static final Tag.Identified<Item> INGOTS_BRASS = tag("brass_ingots");
+		public static final Tag.Identified<Item> GEMS = tag("gems");
+		public static final Tag.Identified<Item> GEMS_DIAMOND = tag("diamonds");
+		public static final Tag.Identified<Item> GEMS_EMERALD = tag("emerald");
+		public static final Tag.Identified<Item> GEMS_LAPIS = tag("lapis_lazulis");
+		public static final Tag.Identified<Item> GEMS_PRISMARINE = tag("prismarine");
+		public static final Tag.Identified<Item> GEMS_QUARTZ = tag("quartz");
 
 		public static final Tag.Identified<Item> RODS = tag("rods");
 		public static final Tag.Identified<Item> RODS_BLAZE = tag("blaze_rods");
@@ -79,7 +85,31 @@ public class Tags {
 		public static final Tag.Identified<Item> CHESTS_ENDER = tag("ender_chests");
 		public static final Tag.Identified<Item> CHESTS_TRAPPED = tag("trapped_chests");
 		public static final Tag.Identified<Item> CHESTS_WOODEN = tag("wooden_chests");
+		public static final Tag.Identified<Item> BARRELS = tag("barrels");
+		public static final Tag.Identified<Item> BARRELS_WOODEN = tag("wooden_barrels");
 		public static final Tag.Identified<Item> LEATHER = tag("leather");
+		public static final Tag.Identified<Item> GUNPOWDER = tag("gunpowder");
+		public static final Tag.Identified<Item> SAND = tag("sand");
+		public static final Tag.Identified<Item> SAND_COLORLESS = tag("colorless_sand");
+		public static final Tag.Identified<Item> SAND_RED = tag("red_sand");
+		public static final Tag.Identified<Item> FEATHERS = tag("feathers");
+		public static final Tag.Identified<Item> DYES = tag("dyes");
+		public static final Tag.Identified<Item> DYES_BLACK = DyeUtil.getDyeTag(DyeColor.BLACK);
+		public static final Tag.Identified<Item> DYES_RED = DyeUtil.getDyeTag(DyeColor.RED);
+		public static final Tag.Identified<Item> DYES_GREEN = DyeUtil.getDyeTag(DyeColor.GREEN);
+		public static final Tag.Identified<Item> DYES_BROWN = DyeUtil.getDyeTag(DyeColor.BROWN);
+		public static final Tag.Identified<Item> DYES_BLUE = DyeUtil.getDyeTag(DyeColor.BLUE);
+		public static final Tag.Identified<Item> DYES_PURPLE = DyeUtil.getDyeTag(DyeColor.PURPLE);
+		public static final Tag.Identified<Item> DYES_CYAN = DyeUtil.getDyeTag(DyeColor.CYAN);
+		public static final Tag.Identified<Item> DYES_LIGHT_GRAY = DyeUtil.getDyeTag(DyeColor.LIGHT_GRAY);
+		public static final Tag.Identified<Item> DYES_GRAY = DyeUtil.getDyeTag(DyeColor.GRAY);
+		public static final Tag.Identified<Item> DYES_PINK = DyeUtil.getDyeTag(DyeColor.PINK);
+		public static final Tag.Identified<Item> DYES_LIME = DyeUtil.getDyeTag(DyeColor.LIME);
+		public static final Tag.Identified<Item> DYES_YELLOW = DyeUtil.getDyeTag(DyeColor.YELLOW);
+		public static final Tag.Identified<Item> DYES_LIGHT_BLUE = DyeUtil.getDyeTag(DyeColor.LIGHT_BLUE);
+		public static final Tag.Identified<Item> DYES_MAGENTA = DyeUtil.getDyeTag(DyeColor.MAGENTA);
+		public static final Tag.Identified<Item> DYES_ORANGE = DyeUtil.getDyeTag(DyeColor.ORANGE);
+		public static final Tag.Identified<Item> DYES_WHITE = DyeUtil.getDyeTag(DyeColor.WHITE);
 	}
 	public static class Blocks {
 		public static Tag.Identified<Block> tag(String id) {
@@ -150,6 +180,11 @@ public class Tags {
 		public static final Tag.Identified<Block> CHESTS_ENDER = tag("ender_chests");
 		public static final Tag.Identified<Block> CHESTS_TRAPPED = tag("trapped_chests");
 		public static final Tag.Identified<Block> CHESTS_WOODEN = tag("wooden_chests");
+		public static final Tag.Identified<Block> BARRELS = tag("barrels");
+		public static final Tag.Identified<Block> BARRELS_WOODEN = tag("wooden_barrels");
+		public static final Tag.Identified<Block> SAND = tag("sand");
+		public static final Tag.Identified<Block> SAND_COLORLESS = tag("colorless_sand");
+		public static final Tag.Identified<Block> SAND_RED = tag("red_sand");
 	}
 	public static class Fluids {
 		public static Tag.Identified<Fluid> tag(String id) {

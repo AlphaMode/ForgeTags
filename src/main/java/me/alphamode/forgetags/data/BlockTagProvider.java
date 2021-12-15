@@ -56,6 +56,11 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         tag(CHESTS_ENDER).add(Blocks.ENDER_CHEST);
         tag(CHESTS_TRAPPED).add(Blocks.TRAPPED_CHEST);
         tag(CHESTS_WOODEN).add(Blocks.CHEST, Blocks.TRAPPED_CHEST);
+        tag(BARRELS).addTag(BARRELS_WOODEN);
+        tag(BARRELS_WOODEN).add(Blocks.BARREL);
+        tag(SAND).addTag(SAND_COLORLESS).addTag(SAND_RED);
+        tag(SAND_COLORLESS).add(Blocks.SAND);
+        tag(SAND_RED).add(Blocks.RED_SAND);
     }
 
     private void addColored(Consumer<Block> consumer, Tag.Identified<Block> group, String pattern)

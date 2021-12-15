@@ -6,12 +6,15 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Locale;
+import java.util.function.Consumer;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.DyeColor;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
     public ItemTagProvider(FabricDataGenerator dataGenerator, @Nullable BlockTagProvider blockTagProvider) {
@@ -47,6 +50,11 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         copy(Tags.Blocks.CHESTS_ENDER, Tags.Items.CHESTS_ENDER);
         copy(Tags.Blocks.CHESTS_TRAPPED, Tags.Items.CHESTS_TRAPPED);
         copy(Tags.Blocks.CHESTS_WOODEN, Tags.Items.CHESTS_WOODEN);
+        copy(Tags.Blocks.BARRELS, Tags.Items.BARRELS);
+        copy(Tags.Blocks.BARRELS_WOODEN, Tags.Items.BARRELS_WOODEN);
+        copy(Tags.Blocks.SAND, Tags.Items.SAND);
+        copy(Tags.Blocks.SAND_COLORLESS, Tags.Items.SAND_COLORLESS);
+        copy(Tags.Blocks.SAND_RED, Tags.Items.SAND_RED);
 
         tag(Tags.Items.RODS).addTag(Tags.Items.RODS_BLAZE).addTag(Tags.Items.RODS_WOODEN);
         tag(Tags.Items.RODS_BLAZE).add(Items.BLAZE_ROD);
@@ -61,6 +69,30 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.DUSTS_GLOWSTONE).add(Items.GLOWSTONE_DUST);
         tag(Tags.Items.ENDER_PEARLS).add(Items.ENDER_PEARL);
         tag(Tags.Items.LEATHER).add(Items.LEATHER);
+        tag(Tags.Items.GUNPOWDER).add(Items.GUNPOWDER);
+        tag(Tags.Items.GEMS).addTag(Tags.Items.GEMS_DIAMOND).addTag(Tags.Items.GEMS_EMERALD).addTag(Tags.Items.GEMS_LAPIS).addTag(Tags.Items.GEMS_PRISMARINE).addTag(Tags.Items.GEMS_QUARTZ);
+        tag(Tags.Items.GEMS_DIAMOND).add(Items.DIAMOND);
+        tag(Tags.Items.GEMS_EMERALD).add(Items.EMERALD);
+        tag(Tags.Items.GEMS_LAPIS).add(Items.LAPIS_LAZULI);
+        tag(Tags.Items.GEMS_PRISMARINE).add(Items.PRISMARINE_CRYSTALS);
+        tag(Tags.Items.GEMS_QUARTZ).add(Items.QUARTZ);
+        tag(Tags.Items.FEATHERS).add(Items.FEATHER);
+        addColored(tag(Tags.Items.DYES)::addTag, Tags.Items.DYES, "{color}_dye");
+    }
+
+    private void addColored(Consumer<Tag.Identified<Item>> consumer, Tag.Identified<Item> group, String pattern)
+    {
+        String prefix = group.getId().getPath().toUpperCase(Locale.ENGLISH) + '_';
+        for (DyeColor color  : DyeColor.values())
+        {
+            Identifier key = new Identifier("minecraft", pattern.replace("{color}",  color.getName()));
+            Tag.Identified<Item> tag = getForgeItemTag(prefix + color.getName());
+            Item item = Registry.ITEM.get(key);
+            if (item == null || item  == Items.AIR)
+                throw new IllegalStateException("Unknown vanilla item: " + key.toString());
+            tag(tag).add(item);
+            consumer.accept(tag);
+        }
     }
 
     @SuppressWarnings("unchecked")
