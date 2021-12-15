@@ -55,6 +55,13 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         copy(Tags.Blocks.SAND, Tags.Items.SAND);
         copy(Tags.Blocks.SAND_COLORLESS, Tags.Items.SAND_COLORLESS);
         copy(Tags.Blocks.SAND_RED, Tags.Items.SAND_RED);
+        copy(Tags.Blocks.STAINED_GLASS, Tags.Items.STAINED_GLASS);
+        copy(Tags.Blocks.STAINED_GLASS_PANES, Tags.Items.STAINED_GLASS_PANES);
+
+        copy(Tags.Blocks.GLASS, Tags.Items.GLASS);
+        func_240521_a_Colored(Tags.Blocks.GLASS, Tags.Items.GLASS);
+        copy(Tags.Blocks.GLASS_PANES, Tags.Items.GLASS_PANES);
+        func_240521_a_Colored(Tags.Blocks.GLASS_PANES, Tags.Items.GLASS_PANES);
 
         tag(Tags.Items.RODS).addTag(Tags.Items.RODS_BLAZE).addTag(Tags.Items.RODS_WOODEN);
         tag(Tags.Items.RODS_BLAZE).add(Items.BLAZE_ROD);
