@@ -68,7 +68,6 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.RODS_WOODEN).add(Items.STICK);
 
         tag(Tags.Items.STRING).add(Items.STRING);
-        tag(Tags.Items.INGOTS_IRON).add(Items.IRON_INGOT);
         tag(Tags.Items.NUGGETS_IRON).add(Items.IRON_INGOT);
         tag(Tags.Items.NUGGETS).addTag(Tags.Items.NUGGETS_IRON);
         tag(Tags.Items.DUSTS_REDSTONE).add(Items.REDSTONE);
@@ -77,6 +76,12 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.ENDER_PEARLS).add(Items.ENDER_PEARL);
         tag(Tags.Items.LEATHER).add(Items.LEATHER);
         tag(Tags.Items.GUNPOWDER).add(Items.GUNPOWDER);
+        tag(Tags.Items.INGOTS).addTag(Tags.Items.INGOTS_IRON).addTag(Tags.Items.INGOTS_GOLD).addTag(Tags.Items.INGOTS_BRICK).addTag(Tags.Items.INGOTS_NETHER_BRICK).addTag(Tags.Items.INGOTS_NETHERITE);
+        tag(Tags.Items.INGOTS_BRICK).add(Items.BRICK);
+        tag(Tags.Items.INGOTS_GOLD).add(Items.GOLD_INGOT);
+        tag(Tags.Items.INGOTS_IRON).add(Items.IRON_INGOT);
+        tag(Tags.Items.INGOTS_NETHERITE).add(Items.NETHERITE_INGOT);
+        tag(Tags.Items.INGOTS_NETHER_BRICK).add(Items.NETHER_BRICK);
         tag(Tags.Items.GEMS).addTag(Tags.Items.GEMS_DIAMOND).addTag(Tags.Items.GEMS_EMERALD).addTag(Tags.Items.GEMS_LAPIS).addTag(Tags.Items.GEMS_PRISMARINE).addTag(Tags.Items.GEMS_QUARTZ);
         tag(Tags.Items.GEMS_DIAMOND).add(Items.DIAMOND);
         tag(Tags.Items.GEMS_EMERALD).add(Items.EMERALD);

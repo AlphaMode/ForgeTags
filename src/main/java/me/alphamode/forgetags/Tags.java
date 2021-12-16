@@ -31,7 +31,12 @@ public class Tags {
 		public static final Tag.Identified<Item> NUGGETS_IRON = tag("iron_nuggets");
 		public static final Tag.Identified<Item> SLIMEBALLS = tag("slimeballs");
 		public static final Tag.Identified<Item> DUSTS_REDSTONE = tag("redstone_dusts");
+		public static final Tag.Identified<Item> INGOTS = tag("ingots");
+		public static final Tag.Identified<Item> INGOTS_BRICK = tag("brick_ingots");
+		public static final Tag.Identified<Item> INGOTS_GOLD = tag("gold_ingots");
 		public static final Tag.Identified<Item> INGOTS_IRON = tag("iron_ingots");
+		public static final Tag.Identified<Item> INGOTS_NETHERITE = tag("netherite_ingots");
+		public static final Tag.Identified<Item> INGOTS_NETHER_BRICK = tag("nether_brick_ingots");
 		public static final Tag.Identified<Item> IRON_PLATES = tag("iron_plates");
 		public static final Tag.Identified<Item> INGOTS_BRASS = tag("brass_ingots");
 		public static final Tag.Identified<Item> GEMS = tag("gems");
