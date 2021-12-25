@@ -73,6 +73,7 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.DUSTS_REDSTONE).add(Items.REDSTONE);
         tag(Tags.Items.SLIMEBALLS).add(Items.SLIME_BALL);
         tag(Tags.Items.DUSTS_GLOWSTONE).add(Items.GLOWSTONE_DUST);
+        tag(Tags.Items.EGGS).add(Items.EGG);
         tag(Tags.Items.ENDER_PEARLS).add(Items.ENDER_PEARL);
         tag(Tags.Items.LEATHER).add(Items.LEATHER);
         tag(Tags.Items.GUNPOWDER).add(Items.GUNPOWDER);

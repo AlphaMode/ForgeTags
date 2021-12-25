@@ -64,6 +64,7 @@ public class Tags {
 		public static final Tag.Identified<Item> STORAGE_BLOCKS_NETHERITE = tag("netherite_blocks");
 		public static final Tag.Identified<Item> STORAGE_BLOCKS_QUARTZ = tag("quartz_blocks");
 		public static final Tag.Identified<Item> STORAGE_BLOCKS_REDSTONE = tag("redstone_blocks");
+		public static final Tag.Identified<Item> EGGS = tag("eggs");
 		public static final Tag.Identified<Item> ENDER_PEARLS = tag("ender_pearls");
 		public static final Tag.Identified<Item> GLASS = tag("glass");
 		public static final Tag.Identified<Item> GLASS_BLACK = tag("black_glass");
