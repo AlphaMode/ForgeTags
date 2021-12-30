@@ -36,6 +36,9 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         tag(ORES_REDSTONE).add(Blocks.REDSTONE_ORE);
         tag(ORES_NETHERITE_SCRAP).add(Blocks.ANCIENT_DEBRIS);
         tag(ORES).addTag(ORES_COAL).addTag(ORES_DIAMOND).addTag(ORES_EMERALD).addTag(ORES_GOLD).addTag(ORES_IRON).addTag(ORES_LAPIS).addTag(ORES_REDSTONE).addTag(ORES_QUARTZ).addTag(ORES_NETHERITE_SCRAP);
+        tag(DIRT).add(Blocks.DIRT, Blocks.GRASS_BLOCK, Blocks.COARSE_DIRT, Blocks.PODZOL, Blocks.MYCELIUM);
+        tag(END_STONES).add(Blocks.END_STONE);
+        tag(ENDERMAN_PLACE_ON_BLACKLIST);
         tag(FENCE_GATES).addTag(FENCE_GATES_WOODEN);
         tag(FENCE_GATES_WOODEN).add(Blocks.OAK_FENCE_GATE, Blocks.SPRUCE_FENCE_GATE, Blocks.BIRCH_FENCE_GATE, Blocks.JUNGLE_FENCE_GATE, Blocks.ACACIA_FENCE_GATE, Blocks.DARK_OAK_FENCE_GATE, Blocks.CRIMSON_FENCE_GATE, Blocks.WARPED_FENCE_GATE);
         tag(FENCES).addTag(FENCES_NETHER_BRICK).addTag(FENCES_WOODEN);
@@ -46,6 +49,8 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         tag(GLASS_COLORLESS).add(Blocks.GLASS);
         tag(GLASS_PANES_COLORLESS).add(Blocks.GLASS_PANE);
         addColored(tag(STAINED_GLASS_PANES)::add, GLASS_PANES, "{color}_stained_glass_pane");
+        tag(GRAVEL).add(Blocks.GRAVEL);
+        tag(NETHERRACK).add(Blocks.NETHERRACK);
         tag(OBSIDIAN).add(Blocks.OBSIDIAN);
         tag(STORAGE_BLOCKS).addTag(STORAGE_BLOCKS_COAL).addTag(STORAGE_BLOCKS_DIAMOND).addTag(STORAGE_BLOCKS_EMERALD).addTag(STORAGE_BLOCKS_GOLD).addTag(STORAGE_BLOCKS_IRON).addTag(STORAGE_BLOCKS_LAPIS).addTag(STORAGE_BLOCKS_QUARTZ).addTag(STORAGE_BLOCKS_REDSTONE).addTag(STORAGE_BLOCKS_NETHERITE);
         tag(STORAGE_BLOCKS_COAL).add(Blocks.COAL_BLOCK);

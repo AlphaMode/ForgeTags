@@ -17,6 +17,11 @@ public class Tags {
 		}
 		public static final Tag.Identified<Item> STONE = tag("stone");
 		public static final Tag.Identified<Item> COBBLESTONE = tag("cobblestone");
+		public static final Tag.Identified<Item> DIRT = tag("dirt");
+		public static final Tag.Identified<Item> END_STONES = tag("end_stones");
+		public static final Tag.Identified<Item> ENDERMAN_PLACE_ON_BLACKLIST = tag("enderman_place_on_blacklist");
+		public static final Tag.Identified<Item> GRAVEL = tag("gravel");
+		public static final Tag.Identified<Item> OBSIDIAN = tag("obsidian");
 		public static final Tag.Identified<Item> ORES = tag("ores");
 		public static final Tag.Identified<Item> ORES_COAL = tag("coal_ores");
 		public static final Tag.Identified<Item> ORES_DIAMOND = tag("diamond_ores");
@@ -27,6 +32,7 @@ public class Tags {
 		public static final Tag.Identified<Item> ORES_REDSTONE = tag("redstone_ores");
 		public static final Tag.Identified<Item> ORES_QUARTZ = tag("quartz_ores");
 		public static final Tag.Identified<Item> ORES_NETHERITE_SCRAP = tag("ancient_debris");
+		public static final Tag.Identified<Item> NETHERRACK = tag("netherrack");
 		public static final Tag.Identified<Item> NUGGETS = tag("nuggets");
 		public static final Tag.Identified<Item> NUGGETS_GOLD = tag("gold_nuggets");
 		public static final Tag.Identified<Item> NUGGETS_IRON = tag("iron_nuggets");
@@ -54,7 +60,6 @@ public class Tags {
 		public static final Tag.Identified<Item> DUSTS_GLOWSTONE = tag("glowstone_dust");
 		public static final Tag.Identified<Item> STAINED_GLASS = tag("stained_glass");
 		public static final Tag.Identified<Item> COPPER_PLATES = tag("copper_plates");
-		public static final Tag.Identified<Item> OBSIDIAN = tag("obsidian");
 		public static final Tag.Identified<Item> STORAGE_BLOCKS = tag("storage_blocks");
 		public static final Tag.Identified<Item> STORAGE_BLOCKS_COAL = tag("coal_blocks");
 		public static final Tag.Identified<Item> STORAGE_BLOCKS_DIAMOND = tag("diamond_blocks");
@@ -146,6 +151,12 @@ public class Tags {
 		}
 		public static final Tag.Identified<Block> STONE = tag("stone");
 		public static final Tag.Identified<Block> COBBLESTONE = tag("cobblestone");
+		public static final Tag.Identified<Block> DIRT = tag("dirt");
+		public static final Tag.Identified<Block> END_STONES = tag("end_stones");
+		public static final Tag.Identified<Block> ENDERMAN_PLACE_ON_BLACKLIST = tag("enderman_place_on_blacklist");
+		public static final Tag.Identified<Block> GRAVEL = tag("gravel");
+		public static final Tag.Identified<Block> NETHERRACK = tag("netherrack");
+		public static final Tag.Identified<Block> OBSIDIAN = tag("obsidian");
 		public static final Tag.Identified<Block> ORES = tag("ores");
 		public static final Tag.Identified<Block> ORES_COAL = tag("coal_ores");
 		public static final Tag.Identified<Block> ORES_DIAMOND = tag("diamond_ores");
@@ -204,7 +215,6 @@ public class Tags {
 		public static final Tag.Identified<Block> STORAGE_BLOCKS_NETHERITE = tag("netherite_blocks");
 		public static final Tag.Identified<Block> STORAGE_BLOCKS_QUARTZ = tag("quartz_blocks");
 		public static final Tag.Identified<Block> STORAGE_BLOCKS_REDSTONE = tag("redstone_blocks");
-		public static final Tag.Identified<Block> OBSIDIAN = tag("obsidian");
 		public static final Tag.Identified<Block> CHESTS = tag("chests");
 		public static final Tag.Identified<Block> CHESTS_ENDER = tag("ender_chests");
 		public static final Tag.Identified<Block> CHESTS_TRAPPED = tag("trapped_chests");

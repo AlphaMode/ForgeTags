@@ -70,6 +70,7 @@ c882d195f524c02b6cac31b07c59b9a4ac834439 data\c\tags\items\lime_dyes.json
 e649bb08be13dab5e8c9c2dc3d16343de31378c2 data\c\tags\items\coal_blocks.json
 6c9289e8ade252556a8e85183614383dc407286a data\c\tags\items\stained_glass.json
 62577fa71342ec47f40b6f37588622bea9f64b93 data\c\tags\blocks\light_gray_glass_panes.json
+00fc3e470dc39f9eb8fcd5dcef109ba5f0e2d77b data\c\tags\items\netherrack.json
 4d777aa65a62a2055e8d846a19c035f3cd79ea53 data\c\tags\blocks\coal_ores.json
 9757f6794b156c97730b2c14b309b509746fb68c data\c\tags\items\iron_blocks.json
 7d02c26582d0d3aa24d6d14ac4269b75a9dbbdca data\c\tags\items\gold_blocks.json
@@ -95,6 +96,7 @@ e2e8b11c564d4e13ddeb7cd903e1aecb34b6cfe2 data\c\tags\items\blue_glass_panes.json
 0ddcba1bb3df2a037930a63852721d10b85ff7ae data\c\tags\blocks\light_blue_glass_panes.json
 6c1e090b58847a71acaa2bf0811c124aace5862e data\c\tags\items\lapis_lazulis.json
 3d850462f818cb5d38f940311023068291c2d40e data\c\tags\blocks\obsidian.json
+50e97df35e7309fbd5feb8f4161ce7888cf962ad data\c\tags\blocks\gravel.json
 8566a4d6fb58edc3195896c57caba7f42318f403 data\c\tags\items\redstone_ores.json
 56c529b1e058cfc78a67941c1efebf9376fb6ea9 data\c\tags\items\eggs.json
 f8ef7474e497c0dee44535fd857f142c1b09c54c data\c\tags\blocks\ancient_debris.json
@@ -112,6 +114,7 @@ f9a7b288b3b769cdc6469c21325951937857da74 data\c\tags\blocks\redstone_blocks.json
 15a5a38f5f8663a1adcfc73332e29d1d0cfae660 data\c\tags\blocks\wooden_chests.json
 58d1ba4ecc6a5c33d406020ffc4c1c5f20e93b33 data\c\tags\items\string.json
 3e0fc6e9b294f3760fa8ec97419ecfb226891c34 data\c\tags\items\emerald_blocks.json
+24900f8a1a59fb4fdddb41bfd546c1f24acfc8a3 data\c\tags\blocks\end_stones.json
 8f07cb8af2a6176b44fd0b84310fe042f6c4835d data\c\tags\items\light_gray_dyes.json
 0f2f9805af755155616ff0feb3bf536178410678 data\c\tags\blocks\quartz_blocks.json
 be0156cf9e9e49f13b016b9f22903e0af2767b45 data\c\tags\blocks\glass.json
@@ -127,6 +130,7 @@ ec673d18a43da1179ba2b066f27ee71947ddef22 data\c\tags\items\pink_dyes.json
 5248498aa07bbe3c6e7b2febbc3b36cff64cda35 data\c\tags\items\nether_brick_ingots.json
 2fe7c51a1b31a67463204ab0fc3e2b59a32ef7ac data\c\tags\items\feathers.json
 38354196ac4765a3d1388f31fa9549ca6a7f5ce7 data\c\tags\blocks\purple_glass.json
+50e97df35e7309fbd5feb8f4161ce7888cf962ad data\c\tags\items\gravel.json
 77a4ccdc2cb9b7d79edc586968929261586e4626 data\c\tags\items\purple_glass_panes.json
 999b381181160fa57b8dbce224b45fc263bfd983 data\c\tags\items\pink_glass_panes.json
 9d362bac10c9fb67a755a908dedaa91697f86ffd data\c\tags\items\light_blue_glass.json
@@ -150,6 +154,7 @@ a7629398a73eef2b5267342d79f1cebcf2b1eec4 data\c\tags\items\slimeballs.json
 d33d4ac7a16b22e80fba947b87ce9651dbe85cb8 data\c\tags\items\redstone_dusts.json
 09d4e35b5d8782e2b576b4900de18d6245fc151d data\c\tags\items\ores.json
 be0156cf9e9e49f13b016b9f22903e0af2767b45 data\c\tags\items\glass.json
+00fc3e470dc39f9eb8fcd5dcef109ba5f0e2d77b data\c\tags\blocks\netherrack.json
 8cb9834551a93b5cf49a6831d9f9e4b686ab9509 data\c\tags\items\diamond_ores.json
 9b04f6e3a913c20d8b5726e6d5101cbfa138ff3f data\c\tags\blocks\lime_glass.json
 2d6fdca3e6dfcfa2abe5d6337d4868447b0e6a13 data\c\tags\blocks\ender_chests.json
@@ -183,6 +188,7 @@ f8ef7474e497c0dee44535fd857f142c1b09c54c data\c\tags\items\ancient_debris.json
 424c7972ce0c94e55f7ec8e2faba4f8e4f51ad9c data\c\tags\items\brown_dyes.json
 4af2fc27547afe06ea3c18f1f24fd7c82f34563b data\c\tags\blocks\pink_glass.json
 8bc2d2230740b7b6a9d581cf6e9b3c85b0c98c2c data\c\tags\blocks\white_glass_panes.json
+74700d556ca80c7a1db5fd4efb09c3ddb26cad66 data\c\tags\blocks\enderman_place_on_blacklist.json
 8a0e60731219fd5258ce11c47f106ed60e56bb89 data\c\tags\blocks\emerald_ores.json
 bc203f09dd7f48965d146d0bd035fb904cb75e7d data\c\tags\blocks\wooden_barrels.json
 ede59b1d22abbaea6a8eb2956062ab64c890c8cc data\c\tags\items\light_gray_glass.json
@@ -190,4 +196,5 @@ ede59b1d22abbaea6a8eb2956062ab64c890c8cc data\c\tags\items\light_gray_glass.json
 51c2ab55b6b90ef7e17f01a43fa0460dac7a742a data\c\tags\items\light_blue_dyes.json
 f061654c1433f61099ca96a826b2b41501520cce data\c\tags\items\brown_glass_panes.json
 02652eb8c177fa7e5c77c1c8ad3dd1936ef3ce6c data\c\tags\items\yellow_glass.json
+5ff2904b81e8e35171e8cd6ccf31c27785115302 data\c\tags\blocks\dirt.json
 ae97ce89744e841b0130af3dc410dbd42223ec52 data\c\tags\blocks\lapis_ores.json

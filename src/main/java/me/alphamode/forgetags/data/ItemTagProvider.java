@@ -35,6 +35,7 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         copy(Tags.Blocks.ORES_QUARTZ, Tags.Items.ORES_QUARTZ);
         copy(Tags.Blocks.ORES_REDSTONE, Tags.Items.ORES_REDSTONE);
         copy(Tags.Blocks.ORES_NETHERITE_SCRAP, Tags.Items.ORES_NETHERITE_SCRAP);
+        copy(Tags.Blocks.GRAVEL, Tags.Items.GRAVEL);
         copy(Tags.Blocks.OBSIDIAN, Tags.Items.OBSIDIAN);
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
         copy(Tags.Blocks.STORAGE_BLOCKS_COAL, Tags.Items.STORAGE_BLOCKS_COAL);
@@ -68,9 +69,10 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.RODS_WOODEN).add(Items.STICK);
 
         tag(Tags.Items.STRING).add(Items.STRING);
+        copy(Tags.Blocks.NETHERRACK, Tags.Items.NETHERRACK);
+        tag(Tags.Items.NUGGETS).addTag(Tags.Items.NUGGETS_IRON).addTag(Tags.Items.NUGGETS_GOLD);
         tag(Tags.Items.NUGGETS_IRON).add(Items.IRON_INGOT);
         tag(Tags.Items.NUGGETS_GOLD).add(Items.GOLD_NUGGET);
-        tag(Tags.Items.NUGGETS).addTag(Tags.Items.NUGGETS_IRON).addTag(Tags.Items.NUGGETS_GOLD);
         tag(Tags.Items.DUSTS_REDSTONE).add(Items.REDSTONE);
         tag(Tags.Items.SLIMEBALLS).add(Items.SLIME_BALL);
         tag(Tags.Items.DUSTS_GLOWSTONE).add(Items.GLOWSTONE_DUST);
