@@ -69,7 +69,8 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         tag(Tags.Items.STRING).add(Items.STRING);
         tag(Tags.Items.NUGGETS_IRON).add(Items.IRON_INGOT);
-        tag(Tags.Items.NUGGETS).addTag(Tags.Items.NUGGETS_IRON);
+        tag(Tags.Items.NUGGETS_GOLD).add(Items.GOLD_NUGGET);
+        tag(Tags.Items.NUGGETS).addTag(Tags.Items.NUGGETS_IRON).addTag(Tags.Items.NUGGETS_GOLD);
         tag(Tags.Items.DUSTS_REDSTONE).add(Items.REDSTONE);
         tag(Tags.Items.SLIMEBALLS).add(Items.SLIME_BALL);
         tag(Tags.Items.DUSTS_GLOWSTONE).add(Items.GLOWSTONE_DUST);
@@ -90,6 +91,11 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.GEMS_PRISMARINE).add(Items.PRISMARINE_CRYSTALS);
         tag(Tags.Items.GEMS_QUARTZ).add(Items.QUARTZ);
         tag(Tags.Items.FEATHERS).add(Items.FEATHER);
+        copy(Tags.Blocks.FENCE_GATES, Tags.Items.FENCE_GATES);
+        copy(Tags.Blocks.FENCE_GATES_WOODEN, Tags.Items.FENCE_GATES_WOODEN);
+        copy(Tags.Blocks.FENCES, Tags.Items.FENCES);
+        copy(Tags.Blocks.FENCES_NETHER_BRICK, Tags.Items.FENCES_NETHER_BRICK);
+        copy(Tags.Blocks.FENCES_WOODEN, Tags.Items.FENCES_WOODEN);
         addColored(tag(Tags.Items.DYES)::addTag, Tags.Items.DYES, "{color}_dye");
     }
 

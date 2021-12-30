@@ -28,6 +28,7 @@ public class Tags {
 		public static final Tag.Identified<Item> ORES_QUARTZ = tag("quartz_ores");
 		public static final Tag.Identified<Item> ORES_NETHERITE_SCRAP = tag("ancient_debris");
 		public static final Tag.Identified<Item> NUGGETS = tag("nuggets");
+		public static final Tag.Identified<Item> NUGGETS_GOLD = tag("gold_nuggets");
 		public static final Tag.Identified<Item> NUGGETS_IRON = tag("iron_nuggets");
 		public static final Tag.Identified<Item> SLIMEBALLS = tag("slimeballs");
 		public static final Tag.Identified<Item> DUSTS_REDSTONE = tag("redstone_dusts");
@@ -116,6 +117,11 @@ public class Tags {
 		public static final Tag.Identified<Item> SAND_COLORLESS = tag("colorless_sand");
 		public static final Tag.Identified<Item> SAND_RED = tag("red_sand");
 		public static final Tag.Identified<Item> FEATHERS = tag("feathers");
+		public static final Tag.Identified<Item> FENCE_GATES = tag("fence_gates");
+		public static final Tag.Identified<Item> FENCE_GATES_WOODEN = tag("wooden_fence_gates");
+		public static final Tag.Identified<Item> FENCES = tag("fences");
+		public static final Tag.Identified<Item> FENCES_NETHER_BRICK = tag("nether_brick_fences");
+		public static final Tag.Identified<Item> FENCES_WOODEN = tag("wooden_fences");
 		public static final Tag.Identified<Item> DYES = tag("dyes");
 		public static final Tag.Identified<Item> DYES_BLACK = DyeUtil.getDyeTag(DyeColor.BLACK);
 		public static final Tag.Identified<Item> DYES_RED = DyeUtil.getDyeTag(DyeColor.RED);
@@ -208,6 +214,11 @@ public class Tags {
 		public static final Tag.Identified<Block> SAND = tag("sand");
 		public static final Tag.Identified<Block> SAND_COLORLESS = tag("colorless_sand");
 		public static final Tag.Identified<Block> SAND_RED = tag("red_sand");
+		public static final Tag.Identified<Block> FENCE_GATES = tag("fence_gates");
+		public static final Tag.Identified<Block> FENCE_GATES_WOODEN = tag("wooden_fence_gates");
+		public static final Tag.Identified<Block> FENCES = tag("fences");
+		public static final Tag.Identified<Block> FENCES_NETHER_BRICK = tag("nether_brick_fences");
+		public static final Tag.Identified<Block> FENCES_WOODEN = tag("wooden_fences");
 	}
 	public static class Fluids {
 		public static Tag.Identified<Fluid> tag(String id) {

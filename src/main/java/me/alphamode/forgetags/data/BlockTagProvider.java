@@ -36,6 +36,11 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         tag(ORES_REDSTONE).add(Blocks.REDSTONE_ORE);
         tag(ORES_NETHERITE_SCRAP).add(Blocks.ANCIENT_DEBRIS);
         tag(ORES).addTag(ORES_COAL).addTag(ORES_DIAMOND).addTag(ORES_EMERALD).addTag(ORES_GOLD).addTag(ORES_IRON).addTag(ORES_LAPIS).addTag(ORES_REDSTONE).addTag(ORES_QUARTZ).addTag(ORES_NETHERITE_SCRAP);
+        tag(FENCE_GATES).addTag(FENCE_GATES_WOODEN);
+        tag(FENCE_GATES_WOODEN).add(Blocks.OAK_FENCE_GATE, Blocks.SPRUCE_FENCE_GATE, Blocks.BIRCH_FENCE_GATE, Blocks.JUNGLE_FENCE_GATE, Blocks.ACACIA_FENCE_GATE, Blocks.DARK_OAK_FENCE_GATE, Blocks.CRIMSON_FENCE_GATE, Blocks.WARPED_FENCE_GATE);
+        tag(FENCES).addTag(FENCES_NETHER_BRICK).addTag(FENCES_WOODEN);
+        tag(FENCES_NETHER_BRICK).add(Blocks.NETHER_BRICK_FENCE);
+        tag(FENCES_WOODEN).add(Blocks.OAK_FENCE, Blocks.SPRUCE_FENCE, Blocks.BIRCH_FENCE, Blocks.JUNGLE_FENCE, Blocks.ACACIA_FENCE, Blocks.DARK_OAK_FENCE,  Blocks.CRIMSON_FENCE, Blocks.WARPED_FENCE);
         tag(GLASS).addTag(GLASS_COLORLESS).addTag(STAINED_GLASS);
         addColored(tag(STAINED_GLASS)::add, GLASS, "{color}_stained_glass");
         tag(GLASS_COLORLESS).add(Blocks.GLASS);
