@@ -71,7 +71,7 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.STRING).add(Items.STRING);
         copy(Tags.Blocks.NETHERRACK, Tags.Items.NETHERRACK);
         tag(Tags.Items.NUGGETS).addTag(Tags.Items.NUGGETS_IRON).addTag(Tags.Items.NUGGETS_GOLD);
-        tag(Tags.Items.NUGGETS_IRON).add(Items.IRON_INGOT);
+        tag(Tags.Items.NUGGETS_IRON).add(Items.IRON_NUGGET);
         tag(Tags.Items.NUGGETS_GOLD).add(Items.GOLD_NUGGET);
         tag(Tags.Items.DUSTS_REDSTONE).add(Items.REDSTONE);
         tag(Tags.Items.SLIMEBALLS).add(Items.SLIME_BALL);
