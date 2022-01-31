@@ -25,7 +25,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void generateTags() {
         tag(STONE).add(Blocks.ANDESITE, Blocks.DIORITE, Blocks.GRANITE, Blocks.INFESTED_STONE, Blocks.STONE, Blocks.POLISHED_ANDESITE, Blocks.POLISHED_DIORITE, Blocks.POLISHED_GRANITE);
-        tag(COBBLESTONE).add(Blocks.COBBLESTONE);
+        tag(COBBLESTONE).add(Blocks.COBBLESTONE, Blocks.INFESTED_COBBLESTONE, Blocks.MOSSY_COBBLESTONE, Blocks.COBBLED_DEEPSLATE);
         tag(ORES_COAL).add(Blocks.COAL_ORE);
         tag(ORES_DIAMOND).add(Blocks.DIAMOND_ORE);
         tag(ORES_EMERALD).add(Blocks.EMERALD_ORE);
