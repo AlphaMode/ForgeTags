@@ -151,6 +151,10 @@ public class Tags {
 		}
 		public static final Tag.Identified<Block> STONE = tag("stone");
 		public static final Tag.Identified<Block> COBBLESTONE = tag("cobblestone");
+		public static final Tag.Identified<Block> COBBLESTONE_NORMAL = tag("cobblestone/normal");
+		public static final Tag.Identified<Block> COBBLESTONE_INFESTED = tag("cobblestone/infested");
+		public static final Tag.Identified<Block> COBBLESTONE_MOSSY = tag("cobblestone/mossy");
+		public static final Tag.Identified<Block> COBBLESTONE_DEEPSLATE = tag("cobblestone/deepslate");
 		public static final Tag.Identified<Block> DIRT = tag("dirt");
 		public static final Tag.Identified<Block> END_STONES = tag("end_stones");
 		public static final Tag.Identified<Block> ENDERMAN_PLACE_ON_BLACKLIST = tag("enderman_place_on_blacklist");
