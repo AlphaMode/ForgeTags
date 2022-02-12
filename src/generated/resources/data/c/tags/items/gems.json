@@ -1,10 +1,11 @@
 {
   "replace": false,
   "values": [
-    "#c:diamonds",
-    "#c:emerald",
-    "#c:lapis_lazulis",
-    "#c:prismarine",
-    "#c:quartz"
+    "#c:gems/amethyst",
+    "#c:gems/diamond",
+    "#c:gems/emerald",
+    "#c:gems/lapis",
+    "#c:gems/prismarine",
+    "#c:gems/quartz"
   ]
 }

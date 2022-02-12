@@ -1,10 +1,11 @@
 {
   "replace": false,
   "values": [
-    "#c:iron_ingots",
-    "#c:gold_ingots",
-    "#c:brick_ingots",
-    "#c:nether_brick_ingots",
-    "#c:netherite_ingots"
+    "#c:ingots/brick",
+    "#c:ingots/copper",
+    "#c:ingots/gold",
+    "#c:ingots/iron",
+    "#c:ingots/netherite",
+    "#c:ingots/nether_brick"
   ]
 }
