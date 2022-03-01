@@ -22,5 +22,10 @@
   "depends": {
     "fabricloader": ">=0.12.12",
     "fabric": "*"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/class_1767": ["me/alphamode/forgetags/extensions/DyeExtension"]
+    }
   }
 }

@@ -13,6 +13,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.tag.Tag;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -91,13 +92,13 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
         tag(STORAGE_BLOCKS_NETHERITE).add(Blocks.NETHERITE_BLOCK);
     }
 
-    private void addColored(Consumer<Block> consumer, Tag.Identified<Block> group, String pattern)
+    private void addColored(Consumer<Block> consumer, TagKey<Block> group, String pattern)
     {
-        String prefix = group.getId().getPath().toUpperCase(Locale.ENGLISH) + '_';
+        String prefix = group.id().getPath().toUpperCase(Locale.ENGLISH) + '_';
         for (DyeColor color  : DyeColor.values())
         {
             Identifier key = new Identifier("minecraft", pattern.replace("{color}",  color.getName()));
-            Tag.Identified<Block> tag = getForgeTag(prefix + color.getName());
+            TagKey<Block> tag = getForgeTag(prefix + color.getName());
             Block block = Registry.BLOCK.get(key);
             if (block == null || block  == Blocks.AIR)
                 throw new IllegalStateException("Unknown vanilla block: " + key.toString());
@@ -107,12 +108,12 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     }
 
     @SuppressWarnings("unchecked")
-    private Tag.Identified<Block> getForgeTag(String name)
+    private TagKey<Block> getForgeTag(String name)
     {
         try
         {
             name = name.toUpperCase(Locale.ENGLISH);
-            return (Tag.Identified<Block>)Tags.Blocks.class.getDeclaredField(name).get(null);
+            return (TagKey<Block>)Tags.Blocks.class.getDeclaredField(name).get(null);
         }
         catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e)
         {
@@ -122,7 +123,7 @@ public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
 
-    public FabricTagBuilder<Block> tag(Tag.Identified<Block> tag) {
+    public FabricTagBuilder<Block> tag(TagKey<Block> tag) {
         return getOrCreateTagBuilder(tag);
     }
 }

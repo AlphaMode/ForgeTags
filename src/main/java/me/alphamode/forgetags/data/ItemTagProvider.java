@@ -3,6 +3,7 @@ package me.alphamode.forgetags.data;
 import me.alphamode.forgetags.Tags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.tag.TagKey;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Locale;
@@ -143,13 +144,13 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         tag(Tags.Items.STRING).add(Items.STRING);
     }
 
-    private void addColored(Consumer<Tag.Identified<Item>> consumer, Tag.Identified<Item> group, String pattern)
+    private void addColored(Consumer<TagKey<Item>> consumer, TagKey<Item> group, String pattern)
     {
-        String prefix = group.getId().getPath().toUpperCase(Locale.ENGLISH) + '_';
+        String prefix = group.id().getPath().toUpperCase(Locale.ENGLISH) + '_';
         for (DyeColor color  : DyeColor.values())
         {
             Identifier key = new Identifier("minecraft", pattern.replace("{color}",  color.getName()));
-            Tag.Identified<Item> tag = getForgeItemTag(prefix + color.getName());
+            TagKey<Item> tag = getForgeItemTag(prefix + color.getName());
             Item item = Registry.ITEM.get(key);
             if (item == null || item  == Items.AIR)
                 throw new IllegalStateException("Unknown vanilla item: " + key.toString());
@@ -158,26 +159,26 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         }
     }
 
-    private void copyColored(Tag.Identified<Block> blockGroup, Tag.Identified<Item> itemGroup)
+    private void copyColored(TagKey<Block> blockGroup, TagKey<Item> itemGroup)
     {
-        String blockPre = blockGroup.getId().getPath().toUpperCase(Locale.ENGLISH) + '_';
-        String itemPre = itemGroup.getId().getPath().toUpperCase(Locale.ENGLISH) + '_';
+        String blockPre = blockGroup.id().getPath().toUpperCase(Locale.ENGLISH) + '_';
+        String itemPre = itemGroup.id().getPath().toUpperCase(Locale.ENGLISH) + '_';
         for (DyeColor color  : DyeColor.values())
         {
-            Tag.Identified<Block> from = getForgeBlockTag(blockPre + color.getName());
-            Tag.Identified<Item> to = getForgeItemTag(itemPre + color.getName());
+            TagKey<Block> from = getForgeBlockTag(blockPre + color.getName());
+            TagKey<Item> to = getForgeItemTag(itemPre + color.getName());
             copy(from, to);
         }
         copy(getForgeBlockTag(blockPre + "colorless"), getForgeItemTag(itemPre + "colorless"));
     }
 
     @SuppressWarnings("unchecked")
-    private Tag.Identified<Block> getForgeBlockTag(String name)
+    private TagKey<Block> getForgeBlockTag(String name)
     {
         try
         {
             name = name.toUpperCase(Locale.ENGLISH);
-            return (Tag.Identified<Block>)Tags.Blocks.class.getDeclaredField(name).get(null);
+            return (TagKey<Block>)Tags.Blocks.class.getDeclaredField(name).get(null);
         }
         catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e)
         {
@@ -186,12 +187,12 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
 
     @SuppressWarnings("unchecked")
-    private Tag.Identified<Item> getForgeItemTag(String name)
+    private TagKey<Item> getForgeItemTag(String name)
     {
         try
         {
             name = name.toUpperCase(Locale.ENGLISH);
-            return (Tag.Identified<Item>)Tags.Items.class.getDeclaredField(name).get(null);
+            return (TagKey<Item>)Tags.Items.class.getDeclaredField(name).get(null);
         }
         catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e)
         {
@@ -199,7 +200,7 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         }
     }
 
-    public FabricTagBuilder<Item> tag(Tag.Identified<Item> tag) {
+    public FabricTagBuilder<Item> tag(TagKey<Item> tag) {
         return getOrCreateTagBuilder(tag);
     }
 }
