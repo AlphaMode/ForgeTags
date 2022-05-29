@@ -33,6 +33,10 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         copy(Tags.Blocks.CHESTS_TRAPPED, Tags.Items.CHESTS_TRAPPED);
         copy(Tags.Blocks.CHESTS_WOODEN, Tags.Items.CHESTS_WOODEN);
         copy(Tags.Blocks.COBBLESTONE, Tags.Items.COBBLESTONE);
+        copy(Tags.Blocks.COBBLESTONE_NORMAL, Tags.Items.COBBLESTONE_NORMAL);
+        copy(Tags.Blocks.COBBLESTONE_INFESTED, Tags.Items.COBBLESTONE_INFESTED);
+        copy(Tags.Blocks.COBBLESTONE_MOSSY, Tags.Items.COBBLESTONE_MOSSY);
+        copy(Tags.Blocks.COBBLESTONE_DEEPSLATE, Tags.Items.COBBLESTONE_DEEPSLATE);
         tag(Tags.Items.CROPS).addTag(Tags.Items.CROPS_BEETROOT).addTag(Tags.Items.CROPS_CARROT).addTag(Tags.Items.CROPS_NETHER_WART).addTag(Tags.Items.CROPS_POTATO).addTag(Tags.Items.CROPS_WHEAT);
         tag(Tags.Items.CROPS_BEETROOT).add(Items.BEETROOT);
         tag(Tags.Items.CROPS_CARROT).add(Items.CARROT);

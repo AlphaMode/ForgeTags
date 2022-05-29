@@ -32,6 +32,10 @@ public class Tags
 		public static final TagKey<Block> CHESTS_TRAPPED = tag("chests/trapped");
 		public static final TagKey<Block> CHESTS_WOODEN = tag("chests/wooden");
 		public static final TagKey<Block> COBBLESTONE = tag("cobblestone");
+		public static final TagKey<Block> COBBLESTONE_NORMAL = tag("cobblestone/normal");
+		public static final TagKey<Block> COBBLESTONE_INFESTED = tag("cobblestone/infested");
+		public static final TagKey<Block> COBBLESTONE_MOSSY = tag("cobblestone/mossy");
+		public static final TagKey<Block> COBBLESTONE_DEEPSLATE = tag("cobblestone/deepslate");
 		public static final TagKey<Block> END_STONES = tag("end_stones");
 		public static final TagKey<Block> ENDERMAN_PLACE_ON_BLACKLIST = tag("enderman_place_on_blacklist");
 		public static final TagKey<Block> FENCE_GATES = tag("fence_gates");
@@ -181,6 +185,10 @@ public class Tags
 		public static final TagKey<Item> CHESTS_TRAPPED = tag("chests/trapped");
 		public static final TagKey<Item> CHESTS_WOODEN = tag("chests/wooden");
 		public static final TagKey<Item> COBBLESTONE = tag("cobblestone");
+		public static final TagKey<Item> COBBLESTONE_NORMAL = tag("cobblestone/normal");
+		public static final TagKey<Item> COBBLESTONE_INFESTED = tag("cobblestone/infested");
+		public static final TagKey<Item> COBBLESTONE_MOSSY = tag("cobblestone/mossy");
+		public static final TagKey<Item> COBBLESTONE_DEEPSLATE = tag("cobblestone/deepslate");
 		public static final TagKey<Item> CROPS = tag("crops");
 		public static final TagKey<Item> CROPS_BEETROOT = tag("crops/beetroot");
 		public static final TagKey<Item> CROPS_CARROT = tag("crops/carrot");
