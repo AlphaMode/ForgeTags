@@ -1,22 +1,20 @@
 package me.alphamode.forgetags.data;
 
-import static me.alphamode.forgetags.Tags.Blocks.*;
 import me.alphamode.forgetags.Tags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-
-import java.util.Locale;
-import java.util.function.Consumer;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.tag.BlockTags;
-import net.minecraft.tag.Tag;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
+import java.util.Locale;
+import java.util.function.Consumer;
+
+import static me.alphamode.forgetags.Tags.Blocks.*;
 
 public class BlockTagProvider extends FabricTagProvider.BlockTagProvider {
     public BlockTagProvider(FabricDataGenerator dataGenerator) {
