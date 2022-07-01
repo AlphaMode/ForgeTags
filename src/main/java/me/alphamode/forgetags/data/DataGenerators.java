@@ -9,5 +9,6 @@ public class DataGenerators implements DataGeneratorEntrypoint {
         fabricDataGenerator.addProvider(FluidTagProvider::new);
         BlockTagProvider blockTagProvider = fabricDataGenerator.addProvider(BlockTagProvider::new);
         fabricDataGenerator.addProvider(new ItemTagProvider(fabricDataGenerator, blockTagProvider));
+        fabricDataGenerator.addProvider(BiomeTagsProvider::new);
     }
 }
