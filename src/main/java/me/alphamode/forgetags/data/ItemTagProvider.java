@@ -144,6 +144,22 @@ public class ItemTagProvider extends FabricTagProvider.ItemTagProvider {
         copy(Tags.Blocks.STORAGE_BLOCKS_RAW_IRON, Tags.Items.STORAGE_BLOCKS_RAW_IRON);
         copy(Tags.Blocks.STORAGE_BLOCKS_NETHERITE, Tags.Items.STORAGE_BLOCKS_NETHERITE);
         tag(Tags.Items.STRING).add(Items.STRING);
+        tag(Tags.Items.TOOLS_SWORDS).add(Items.WOODEN_SWORD, Items.STONE_SWORD, Items.IRON_SWORD, Items.GOLDEN_SWORD, Items.DIAMOND_SWORD, Items.NETHERITE_SWORD);
+        tag(Tags.Items.TOOLS_AXES).add(Items.WOODEN_AXE, Items.STONE_AXE, Items.IRON_AXE, Items.GOLDEN_AXE, Items.DIAMOND_AXE, Items.NETHERITE_AXE);
+        tag(Tags.Items.TOOLS_PICKAXES).add(Items.WOODEN_PICKAXE, Items.STONE_PICKAXE, Items.IRON_PICKAXE, Items.GOLDEN_PICKAXE, Items.DIAMOND_PICKAXE, Items.NETHERITE_PICKAXE);
+        tag(Tags.Items.TOOLS_SHOVELS).add(Items.WOODEN_SHOVEL, Items.STONE_SHOVEL, Items.IRON_SHOVEL, Items.GOLDEN_SHOVEL, Items.DIAMOND_SHOVEL, Items.NETHERITE_SHOVEL);
+        tag(Tags.Items.TOOLS_HOES).add(Items.WOODEN_HOE, Items.STONE_HOE, Items.IRON_HOE, Items.GOLDEN_HOE, Items.DIAMOND_HOE, Items.NETHERITE_HOE);
+        tag(Tags.Items.TOOLS_SHIELDS).add(Items.SHIELD);
+        tag(Tags.Items.TOOLS_BOWS).add(Items.BOW);
+        tag(Tags.Items.TOOLS_CROSSBOWS).add(Items.CROSSBOW);
+        tag(Tags.Items.TOOLS_FISHING_RODS).add(Items.FISHING_ROD);
+        tag(Tags.Items.TOOLS_TRIDENTS).add(Items.TRIDENT);
+        tag(Tags.Items.TOOLS).addTag(Tags.Items.TOOLS_SWORDS).addTag(Tags.Items.TOOLS_AXES).addTag(Tags.Items.TOOLS_PICKAXES).addTag(Tags.Items.TOOLS_SHOVELS).addTag(Tags.Items.TOOLS_HOES).addTag(Tags.Items.TOOLS_SHIELDS).addTag(Tags.Items.TOOLS_BOWS).addTag(Tags.Items.TOOLS_CROSSBOWS).addTag(Tags.Items.TOOLS_FISHING_RODS).addTag(Tags.Items.TOOLS_TRIDENTS);
+        tag(Tags.Items.ARMORS_HELMETS).add(Items.LEATHER_HELMET, Items.TURTLE_HELMET, Items.CHAINMAIL_HELMET, Items.IRON_HELMET, Items.GOLDEN_HELMET, Items.DIAMOND_HELMET, Items.NETHERITE_HELMET);
+        tag(Tags.Items.ARMORS_CHESTPLATES).add(Items.LEATHER_CHESTPLATE, Items.CHAINMAIL_CHESTPLATE, Items.IRON_CHESTPLATE, Items.GOLDEN_CHESTPLATE, Items.DIAMOND_CHESTPLATE, Items.NETHERITE_CHESTPLATE);
+        tag(Tags.Items.ARMORS_LEGGINGS).add(Items.LEATHER_LEGGINGS, Items.CHAINMAIL_LEGGINGS, Items.IRON_LEGGINGS, Items.GOLDEN_LEGGINGS, Items.DIAMOND_LEGGINGS, Items.NETHERITE_LEGGINGS);
+        tag(Tags.Items.ARMORS_BOOTS).add(Items.LEATHER_BOOTS, Items.CHAINMAIL_BOOTS, Items.IRON_BOOTS, Items.GOLDEN_BOOTS, Items.DIAMOND_BOOTS, Items.NETHERITE_BOOTS);
+        tag(Tags.Items.ARMORS).addTag(Tags.Items.ARMORS_HELMETS).addTag(Tags.Items.ARMORS_CHESTPLATES).addTag(Tags.Items.ARMORS_LEGGINGS).addTag(Tags.Items.ARMORS_BOOTS);
     }
 
     private void addColored(Consumer<TagKey<Item>> consumer, TagKey<Item> group, String pattern)

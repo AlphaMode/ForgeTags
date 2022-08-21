@@ -216,7 +216,10 @@ public class Tags {
 		public static final TagKey<Item> DYES_WHITE = DyeColor.WHITE.getTag();
 
 		public static final TagKey<Item> EGGS = tag("eggs");
-		public static final TagKey<Item> ENCHANTING_FUELS = tag("enchanting_fuels", Set.of(() -> net.minecraft.item.Items.LAPIS_LAZULI));
+		/**
+		 * This tag defaults to {@link net.minecraft.item.Items#LAPIS_LAZULI} when not present in any datapacks, including forge client on vanilla server
+		 */
+		public static final TagKey<Item> ENCHANTING_FUELS = tag("enchanting_fuels");
 		public static final TagKey<Item> END_STONES = tag("end_stones");
 		public static final TagKey<Item> ENDER_PEARLS = tag("ender_pearls");
 		public static final TagKey<Item> FEATHERS = tag("feathers");
@@ -379,7 +382,71 @@ public class Tags {
 		public static final TagKey<Item> STORAGE_BLOCKS_RAW_GOLD = tag("storage_blocks/raw_gold");
 		public static final TagKey<Item> STORAGE_BLOCKS_RAW_IRON = tag("storage_blocks/raw_iron");
 		public static final TagKey<Item> STORAGE_BLOCKS_REDSTONE = tag("storage_blocks/redstone");
-		public static final TagKey<Item> STRING = tag("string");
+		public static final TagKey<Item> STRING                  = tag("string");
+		/**
+		 * A tag containing all existing tools.
+		 */
+		public static final TagKey<Item> TOOLS = tag("tools");
+		/**
+		 * A tag containing all existing swords.
+		 */
+		public static final TagKey<Item> TOOLS_SWORDS = tag("tools/swords");
+		/**
+		 * A tag containing all existing axes.
+		 */
+		public static final TagKey<Item> TOOLS_AXES = tag("tools/axes");
+		/**
+		 * A tag containing all existing pickaxes.
+		 */
+		public static final TagKey<Item> TOOLS_PICKAXES = tag("tools/pickaxes");
+		/**
+		 * A tag containing all existing shovels.
+		 */
+		public static final TagKey<Item> TOOLS_SHOVELS = tag("tools/shovels");
+		/**
+		 * A tag containing all existing hoes.
+		 */
+		public static final TagKey<Item> TOOLS_HOES = tag("tools/hoes");
+		/**
+		 * A tag containing all existing shields.
+		 */
+		public static final TagKey<Item> TOOLS_SHIELDS = tag("tools/shields");
+		/**
+		 * A tag containing all existing bows.
+		 */
+		public static final TagKey<Item> TOOLS_BOWS = tag("tools/bows");
+		/**
+		 * A tag containing all existing crossbows.
+		 */
+		public static final TagKey<Item> TOOLS_CROSSBOWS = tag("tools/crossbows");
+		/**
+		 * A tag containing all existing fishing rods.
+		 */
+		public static final TagKey<Item> TOOLS_FISHING_RODS = tag("tools/fishing_rods");
+		/**
+		 * A tag containing all existing tridents.
+		 */
+		public static final TagKey<Item> TOOLS_TRIDENTS = tag("tools/tridents");
+		/**
+		 * A tag containing all existing armors.
+		 */
+		public static final TagKey<Item> ARMORS = tag("armors");
+		/**
+		 * A tag containing all existing helmets.
+		 */
+		public static final TagKey<Item> ARMORS_HELMETS = tag("armors/helmets");
+		/**
+		 * A tag containing all chestplates.
+		 */
+		public static final TagKey<Item> ARMORS_CHESTPLATES = tag("armors/chestplates");
+		/**
+		 * A tag containing all existing leggings.
+		 */
+		public static final TagKey<Item> ARMORS_LEGGINGS = tag("armors/leggings");
+		/**
+		 * A tag containing all existing boots.
+		 */
+		public static final TagKey<Item> ARMORS_BOOTS = tag("armors/boots");
 
 		private static TagKey<Item> tag(String name, @Nullable Set<Supplier<Item>> defaults) {
 			return TagKey.of(Registry.ITEM_KEY, new Identifier("c", name));
@@ -394,7 +461,14 @@ public class Tags {
 	public static class Fluids {
 		private static void init() {}
 
+		/**
+		 * Holds all fluids related to milk.
+		 */
 		public static final TagKey<Fluid> MILK = tag("milk");
+		/**
+		 * Holds all fluids that are gaseous at room temperature.
+		 */
+		public static final TagKey<Fluid> GASEOUS = tag("gaseous");
 
 		private static TagKey<Fluid> tag(String name) {
 			return TagKey.of(Registry.FLUID_KEY, new Identifier("c", name));
@@ -432,7 +506,6 @@ public class Tags {
 		public static final TagKey<Biome> IS_DRY_NETHER = tag("is_dry/nether");
 		public static final TagKey<Biome> IS_DRY_END = tag("is_dry/end");
 
-		public static final TagKey<Biome> IS_SAVANNA = tag("is_savanna");
 		public static final TagKey<Biome> IS_CONIFEROUS = tag("is_coniferous");
 
 		public static final TagKey<Biome> IS_SPOOKY = tag("is_spooky");
@@ -451,16 +524,12 @@ public class Tags {
 		public static final TagKey<Biome> IS_SANDY = tag("is_sandy");
 		public static final TagKey<Biome> IS_SNOWY = tag("is_snowy");
 		public static final TagKey<Biome> IS_WASTELAND = tag("is_wasteland");
-		public static final TagKey<Biome> IS_BEACH = tag("is_beach");
 		public static final TagKey<Biome> IS_VOID = tag("is_void");
 		public static final TagKey<Biome> IS_UNDERGROUND = tag("is_underground");
 
 		public static final TagKey<Biome> IS_PEAK = tag("is_peak");
 		public static final TagKey<Biome> IS_SLOPE = tag("is_slope");
 		public static final TagKey<Biome> IS_MOUNTAIN = tag("is_mountain");
-
-		public static final TagKey<Biome> IS_OVERWORLD = tag("is_overworld");
-		public static final TagKey<Biome> IS_END = tag("is_end");
 
 		private static TagKey<Biome> tag(String name) {
 			return TagKey.of(Registry.BIOME_KEY, new Identifier("c", name));
